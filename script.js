@@ -22,6 +22,7 @@ const serviceDialog = document.querySelector('.service-dialog');
 const dialogTitle = document.querySelector('#service-dialog-title');
 const dialogCategory = document.querySelector('#service-dialog-category');
 const dialogDescription = document.querySelector('#service-dialog-description');
+const dialogLink = document.querySelector('#service-dialog-link');
 
 filterButtons.forEach((button) => button.addEventListener('click', () => {
   const filter = button.dataset.filter;
@@ -34,6 +35,11 @@ document.querySelectorAll('.service-open').forEach((button) => button.addEventLi
   dialogTitle.textContent = card.dataset.title;
   dialogCategory.textContent = `Service / ${card.dataset.category}`;
   dialogDescription.textContent = card.dataset.description;
+  const isApplication = Boolean(card.dataset.url);
+  dialogLink.href = card.dataset.url || 'mailto:ghimirebijaya96@gmail.com?subject=Project%20enquiry';
+  dialogLink.textContent = card.dataset.linkLabel || 'Start a conversation';
+  dialogLink.target = isApplication ? '_blank' : '';
+  dialogLink.rel = isApplication ? 'noopener noreferrer' : '';
   serviceDialog.showModal();
 }));
 
