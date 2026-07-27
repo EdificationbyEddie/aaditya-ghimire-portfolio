@@ -16,7 +16,7 @@
     <header class="nav wrap">
       <a class="brand" href="#top" aria-label="Aaditya Ghimire home">AG<span>•</span></a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a>
       </nav>
       <a class="nav-cta" href="mailto:ghimirebijaya96@gmail.com">Let's talk <span>↗</span></a>
     </header>
@@ -30,7 +30,7 @@
         </div>
         <div class="hero-bottom reveal">
           <p>I’m Aaditya Ghimire. I create thoughtful digital experiences where clear strategy, sharp design, and technology meet.</p>
-          <a class="text-link" href="#work">Discover my work <span>↓</span></a>
+          <a class="text-link" href="#services">Explore services <span>↓</span></a>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="sphere sphere-one"></div><div class="sphere sphere-two"></div><div class="sphere sphere-three"></div>
@@ -44,12 +44,21 @@
         <div class="stats"><div><strong>01</strong><span>Clear point of view</span></div><div><strong>02</strong><span>Human-first thinking</span></div><div><strong>03</strong><span>Built to evolve</span></div></div>
       </section>
 
-      <section class="work section" id="work">
-        <div class="wrap"><p class="eyebrow">02 / Selected focus</p><div class="work-heading"><h2>Turning possibility<br />into <em>presence.</em></h2><p>A glimpse into how I think, make, and move an idea forward.</p></div></div>
-        <div class="project-list wrap">
-          <article class="project project-dark reveal"><div class="project-number">01</div><div class="project-content"><p class="project-type">Digital products</p><h3>Built for<br /><em>what's next.</em></h3><span>Exploring intelligent, useful experiences.</span></div><div class="project-mark">↗</div></article>
-          <article class="project project-lime reveal"><div class="project-number">02</div><div class="project-content"><p class="project-type">Creative direction</p><h3>Ideas that<br /><em>move people.</em></h3><span>Bringing distinctive stories to life.</span></div><div class="project-mark">✦</div></article>
-          <article class="project project-coral reveal"><div class="project-number">03</div><div class="project-content"><p class="project-type">New collaborations</p><h3>Let's make<br /><em>the good stuff.</em></h3><span>Open to ambitious conversations.</span></div><div class="project-mark">→</div></article>
+      <section class="services section" id="services">
+        <div class="wrap">
+          <p class="eyebrow">02 / What I can help with</p>
+          <div class="work-heading"><h2>Useful ideas,<br /><em>beautifully made.</em></h2><p>Choose an area to see the services and digital experiences I can help bring to life.</p></div>
+          <div class="service-controls" role="tablist" aria-label="Service categories">
+            <button class="filter-button is-active" type="button" data-filter="all">All services</button><button class="filter-button" type="button" data-filter="education">Education</button><button class="filter-button" type="button" data-filter="health">Health</button><button class="filter-button" type="button" data-filter="applications">Applications</button><button class="filter-button" type="button" data-filter="business">Business</button>
+          </div>
+          <div class="service-grid" aria-live="polite">
+            <article class="service-card education" data-category="education" data-title="Learning platforms" data-description="Clear, motivating digital spaces for courses, schools, tutors, and learning communities."><span>01 / Education</span><h3>Learning<br /><em>platforms.</em></h3><p>Course sites, student dashboards, and resource hubs that make progress feel natural.</p><button type="button" class="service-open">Explore <b>↗</b></button></article>
+            <article class="service-card health" data-category="health" data-title="Health experiences" data-description="Trust-building digital experiences that make information, services, and next steps easier to understand."><span>02 / Health</span><h3>Care with<br /><em>clarity.</em></h3><p>Accessible health websites, service explainers, and wellbeing tools designed around people.</p><button type="button" class="service-open">Explore <b>↗</b></button></article>
+            <article class="service-card applications" data-category="applications" data-title="Web applications" data-description="Focused web applications shaped around real workflows, from the first screen to the everyday details."><span>03 / Applications</span><h3>Tools people<br /><em>enjoy using.</em></h3><p>Interactive portals, workflow tools, dashboards, and practical customer experiences.</p><button type="button" class="service-open">Explore <b>↗</b></button></article>
+            <article class="service-card business" data-category="business" data-title="Business websites" data-description="High-confidence websites that articulate your value, give customers a clear next step, and grow with your business."><span>04 / Business</span><h3>Business,<br /><em>with presence.</em></h3><p>Brand-led websites, landing pages, and digital foundations built to earn attention.</p><button type="button" class="service-open">Explore <b>↗</b></button></article>
+            <article class="service-card education" data-category="education" data-title="Community and mentoring" data-description="Warm, intuitive spaces that make it easier to connect people with the knowledge and support they need."><span>05 / Education</span><h3>Knowledge<br /><em>that travels.</em></h3><p>Mentoring programmes, community platforms, and content experiences with momentum.</p><button type="button" class="service-open">Explore <b>↗</b></button></article>
+            <article class="service-card health" data-category="health" data-title="Wellbeing campaigns" data-description="Campaign concepts and interactive pages that turn an important message into a useful, memorable action."><span>06 / Health</span><h3>Good health,<br /><em>made visible.</em></h3><p>Digital campaigns and resource experiences for healthier communities.</p><button type="button" class="service-open">Explore <b>↗</b></button></article>
+          </div>
         </div>
       </section>
 
@@ -62,6 +71,9 @@
         <div class="contact-footer"><p>Based wherever great work happens.</p><div><a href="#top">Back to top ↑</a><span>© <span id="year"></span> Aaditya Ghimire</span></div></div>
       </section>
     </main>
+    <dialog class="service-dialog" aria-labelledby="service-dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close service details">×</button><p class="eyebrow" id="service-dialog-category"></p><h2 id="service-dialog-title"></h2><p id="service-dialog-description"></p><a class="dialog-cta" href="mailto:ghimirebijaya96@gmail.com?subject=Project%20enquiry">Start a conversation <span>↗</span></a>
+    </dialog>
     <script src="script.js"></script>
   </body>
 </html>
